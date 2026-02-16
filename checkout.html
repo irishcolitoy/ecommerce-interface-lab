@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+</head>
+<body>
+
+<section>
+    <h1>Checkout</h1>
+
+    <fieldset>
+        <legend>Shipping Address</legend>
+
+        <label>
+            Name:
+            <input type="text" required>
+        </label><br>
+
+        <label>
+            Street:
+            <input type="text" required>
+        </label><br>
+
+        <label>
+            Zip Code:
+            <input type="text" required>
+        </label>
+    </fieldset>
+</section>
+
+<section>
+    <h2>Payment Details</h2>
+    <form action="account.html">
+        <label>
+            <input type="radio" name="payment" required>
+            Credit Card
+        </label><br>
+
+        <label>
+            <input type="radio" name="payment">
+            PayPal
+        </label><br><br>
+
+        <button type="submit">Place Order</button>
+    </form>
+</section>
+
+<aside>
+    <h3>Order Summary</h3>
+    <p>Subtotal: ₱1,200</p>
+    <p>Shipping: ₱100</p>
+    <p>Total: ₱1,300</p>
+</aside>
+
+</body>
+</html>
