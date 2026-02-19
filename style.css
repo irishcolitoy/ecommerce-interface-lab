@@ -1,0 +1,149 @@
+/* =========================
+   TASK 1: GLOBAL STYLES
+========================= */
+
+:root {
+    --primary-color: #6a0dad;     /* main purple */
+    --accent-color: #9b59b6;      /* lighter purple */
+    --bg-light: #f5f0fa;          /* very light purple bg */
+    --text-main: #333333;
+}
+
+/* Body */
+body {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--primary-color);
+    font-family: Georgia, serif;
+}
+
+/* =========================
+   TASK 2: INTERACTIVE STATES
+========================= */
+
+/* Remove underline */
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+/* Hover effect */
+a:hover {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 3px 6px;
+}
+
+/* Active effect */
+a:active {
+    background-color: var(--accent-color);
+}
+
+/* Buttons */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+button:focus {
+    outline: 2px solid black;
+}
+
+/* =========================
+   TASK 3: PRODUCT LIST STYLING
+========================= */
+
+/* Make articles look like cards */
+article {
+    display: inline-block;
+    width: 220px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+/* Alternate background */
+article:nth-child(odd) {
+    background-color: #f0e6f7;
+}
+
+/* =========================
+   TASK 4: ADVANCED SELECTORS
+========================= */
+
+/* Cart empty */
+ul:empty {
+    background-color: #ffe6ff;
+    padding: 20px;
+}
+
+/* Add peso sign before price */
+.price::before {
+    content: "₱";
+}
+
+/* Required inputs */
+input:required {
+    border: 2px solid var(--primary-color);
+}
+
+/* Valid input */
+input:valid {
+    border: 2px solid green;
+}
+
+/* =========================
+   TASK 5: DETAIL PAGE STYLING
+========================= */
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid var(--primary-color);
+    padding: 6px;
+}
+
+/* First column bold */
+td:first-child {
+    font-weight: bold;
+    background-color: #f0e6f7;
+}
+
+/* Reviews quotation style */
+blockquote::before {
+    content: "“";
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+blockquote::after {
+    content: "”";
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+/* Account page marker */
+li::marker {
+    color: var(--primary-color);
+}
