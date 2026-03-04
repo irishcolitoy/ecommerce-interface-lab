@@ -2,48 +2,52 @@
 <html>
 <head>
     <title>BTS Products</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
-<main>
-    <h1>BTS Merchandise</h1>
+<div class="products-container">
 
-    <section>
-        <article>
-            <img src="proof.jpg" width="200" alt="Proof Album">
-            <h2>Proof Album</h2>
-            <p class="price">1,200</p>
-            <a href="detail.html">View Details</a>
-        </article>
+    <aside>
+        <h2>Filter</h2>
+        <form>
+            <label>
+                <input type="checkbox"> On Sale
+            </label><br>
 
-        <article>
-            <img src="hoodie.jpg" width="200" alt="Hoodie">
-            <h2>BTS Hoodie</h2>
-            <p class="price">1,500</p>
-            <a href="detail.html">View Details</a>
-        </article>
-    </section>
-</main>
+            <label>
+                <input type="radio" name="price"> Below ₱1500
+            </label><br>
 
-<aside>
-    <h2>Filter</h2>
-    <form>
-        <label>
-            <input type="checkbox"> On Sale
-        </label><br>
+            <label>
+                <input type="radio" name="price"> Above ₱1500
+            </label>
+        </form>
+    </aside>
 
-        <label>
-            <input type="radio" name="price"> Below ₱1500
-        </label><br>
+    <main>
+        <h1>BTS Merchandise</h1>
 
-        <label>
-            <input type="radio" name="price"> Above ₱1500
-        </label>
-    </form>
-</aside>
+        <section class="products">
+
+            <article>
+                <img src="proof.jpg" alt="Proof Album">
+                <h2>Proof Album</h2>
+                <p class="price">₱1,200</p>
+                <a href="detail.html">View Details</a>
+            </article>
+
+            <article>
+                <img src="hoodie.jpg" alt="Hoodie">
+                <h2>BTS Hoodie</h2>
+                <p class="price">₱1,500</p>
+                <a href="detail.html">View Details</a>
+            </article>
+
+        </section>
+    </main>
+
+</div>
 
 </body>
 </html>
